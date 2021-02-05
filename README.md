@@ -92,8 +92,8 @@ mysql -u jonny -p -h 8.8.8.254 (möjligtvis ett -p efter -h om portnummer är an
 
 #### serverside:
 mysql 
-create user 'Jonny'@'%' identified by 'bad_password';
-GRANT ALL PRIVILEGES ON * .* TO 'Jonny'@'%';
+create user 'Jonny'@'%' identified by 'bad_password'; \
+GRANT ALL PRIVILEGES ON * .* TO 'Jonny'@'%'; \
 FLUSH PRIVILEGES;
 
 

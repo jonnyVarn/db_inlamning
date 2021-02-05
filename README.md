@@ -114,9 +114,9 @@ bindIp: 0.0.0.0
 #authorization: enabled
 
 ##### Clientside: \
-mongo -u jonny -p bad_password 8.8.8.254:27017
-mongo -u <USER> -p <PASSWORD> <HOST>:<PORT>/<DB> --authenticationDatabase <AUTH_DB>
-mongo 8.8.8.254  
+mongo -u jonny -p bad_password 8.8.8.254:27017 \
+mongo -u <USER> -p <PASSWORD> <HOST>:<PORT>/<DB> --authenticationDatabase <AUTH_DB> \
+without authorization mongo 8.8.8.254  
 from mongo db = connect("8.8.8.254:27017/imdb")
 
 

@@ -24,7 +24,7 @@ vanlig plats för konfigurationsfil är "/etc/my.cnf", /etc/mysql/mysql.cnf och 
 mysql show variables ger kanske mer svar: 
 #### Default options are read from the following files in the given order: \
 /etc/my.cnf  \ 
-/etc/mysql/my.cnf \
+/etc/mysql/my.cnf  \\
 ~/.my.cnf 
 
 #### Så efter att ha undersökt mitt system ligger loggarna i /var/log/mysql/

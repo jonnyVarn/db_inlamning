@@ -1,7 +1,7 @@
 ---
 ###  Inlämning 1 databaser  i Linux
 
-- [Mariadb](https://mariadb.com/)
+- [__Mariadb](https://mariadb.com/)
 - [Mongodb](https://www.mongodb.com)
 - [MySQL](https://www.mysql.com) 
 

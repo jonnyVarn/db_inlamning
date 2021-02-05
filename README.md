@@ -25,7 +25,7 @@ mysql show variables ger kanske mer svar:
 #### Default options are read from the following files in the given order: \
 /etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf 
 
-#### so after examinating this system the logs are in /var/log/mysql/
+#### Så efter att ha undersökt mitt system ligger loggarna i /var/log/mysql/
 
 #### MongoDB
 Från mongo show logs show log global, show log startupWarnings

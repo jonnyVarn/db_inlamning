@@ -23,7 +23,9 @@ locate my.cnf \
 vanlig plats för konfigurationsfil är "/etc/my.cnf", /etc/mysql/mysql.cnf och (ubuntu MariaDB) /etc/mysql/mariadb.conf.d/50-server.cnf \
 mysql show variables ger kanske mer svar: 
 #### Default options are read from the following files in the given order: \
-/etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf 
+/etc/my.cnf  \ 
+/etc/mysql/my.cnf \
+~/.my.cnf 
 
 #### Så efter att ha undersökt mitt system ligger loggarna i /var/log/mysql/
 

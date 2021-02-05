@@ -12,7 +12,7 @@
 
 #### 1: Var hittar man log-filerna för databaserna ?
 Enkelt svar: /var/log \
-Svårt svar:
+Svårt svar: \
 Var man hittar log-filer är definierat i konfigurationsfilen. 
 #### MariaDB/MySQL
 locate my.cnf \
@@ -22,8 +22,8 @@ locate my.cnf \
 /var/lib/dpkg/alternatives/my.cnf\
 vanlig plats för konfigurationsfil är "/etc/my.cnf", /etc/mysql/mysql.cnf och (ubuntu MariaDB) /etc/mysql/mariadb.conf.d/50-server.cnf \
 mysql show variables ger kanske mer svar: 
-#### Default options are read from the following files in the given order:
-/etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf
+#### Default options are read from the following files in the given order: \
+/etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf 
 
 #### so after examinating this system the logs are in /var/log/mysql/
 

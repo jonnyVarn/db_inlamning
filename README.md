@@ -10,7 +10,7 @@
 ---
 
 
-### 1: Var hittar man log-filerna för databaserna ?
+#### 1: Var hittar man log-filerna för databaserna ?
 Enkelt svar: /var/log \
 Svårt svar:
 Var man hittar log-filer är definierat i konfigurationsfilen. 

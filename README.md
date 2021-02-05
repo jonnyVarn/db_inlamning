@@ -30,7 +30,9 @@ mysql show variables ger kanske mer svar:
 #### Så efter att ha undersökt mitt system ligger loggarna i /var/log/mysql/
 
 #### MongoDB
-Från mongo show logs show log global, show log startupWarnings. \
+Från mongo show logs \
+show log global \
+show log startupWarnings. \
 Mongo har också en konfigurationsfil etc/"mongo.conf där normalt var/log/mongodb/mongodb.log står.
 
 #### 2: Vad är skillnaden mellan en SQL databas som MySQL / MariaDB och en NoSQL databas som MongoDB?

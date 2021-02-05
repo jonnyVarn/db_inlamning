@@ -34,7 +34,7 @@ Mongo har också en konfigurationsfil etc/"mongo.conf där normalt var/log/mongo
 #### 2: Vad är skillnaden mellan en SQL databas som MySQL / MariaDB och en NoSQL databas som MongoDB?
 En stor skillnad är att StructuredQueryLanguage språket används i MySQL/MariaDB vilket det inte gör i MongoDB.
 I MySQL/MariaDB måste man i förväg planera lite mer eftersom det är mindre dynamiskt med tables och rows medans man i MongoDB kan välja att skicka in värden och skapa värden direkt när man märker att dessa behövs.
-MongoDB är en dokument-orienterad databas och lagrar i Json/Bson format och varje värde har en unik nyckel. 
+MongoDB är en dokument-orienterad databas använder javascript och lagrar i Json/Bson format och varje värde har en unik nyckel. 
 MySQL/MariaDB är relationsdatabaser och sparar i tabeller och använder sig av SQL språket.
 
 NOSQL 
@@ -83,20 +83,28 @@ MongoDB, MarkLogic, InterSystems Caché, OrientDB, Apache CouchDB, IBM Cloudant 
 Om flera användare använder samma databas bör man se till att ingen som inte ska ha behörighet kan läsa, skriva, uppdatera eller ta bort en tabell/collection eller databas. Viktigt att tänka på är även dbRef eller REFERENCES och vilken övrig funktionalitet som erbjuds när man ansluter till databasen se fråga 5 mongo admin help.
 
 #### 9. Vilka delar i CRUD påverkar / gör ändringar i databasen, och vilka delar i CRUD gör inte det?
-READ gör inte ändringar således allt som är relaterat till read.  
+READ gör inte ändringar således allt som är relaterat till read.
 
 #### 10. Hur ansluter man till någon annans databas från terminalen?(Visa både på MySQL och MongoDB)
 #### MySQL
+#### Clientside:
+mysql -u jonny -p -h 8.8.8.254 (möjligtvis ett -p efter -h om portnummer är annat än 3306)
+
 #### serverside:
 mysql 
 create user 'Jonny'@'%' identified by 'bad_password';
 GRANT ALL PRIVILEGES ON * .* TO 'Jonny'@'%';
 FLUSH PRIVILEGES;
 
-#### Clientside:
-mysql -u jonny -p -h 8.8.8.254 (möjligtvis ett -p efter -h om portnummer är annat än 3306)
+
 
 #### MongoDB
+
+##### Clientside: \
+mongo -u jonny -p bad_password 8.8.8.254:27017 \
+mongo -u <USER> -p <PASSWORD> <HOST>:<PORT>/<DB> --authenticationDatabase <AUTH_DB> \
+without authorization mongo 8.8.8.254  
+from mongo db = connect("8.8.8.254:27017/imdb")
 
 ##### Serverside:
 mongo
@@ -114,11 +122,7 @@ bindIp: 0.0.0.0
 #security:
 #authorization: enabled
 
-##### Clientside: \
-mongo -u jonny -p bad_password 8.8.8.254:27017 \
-mongo -u <USER> -p <PASSWORD> <HOST>:<PORT>/<DB> --authenticationDatabase <AUTH_DB> \
-without authorization mongo 8.8.8.254  
-from mongo db = connect("8.8.8.254:27017/imdb")
+
 
 
 

@@ -80,6 +80,7 @@ MYSQL, MariaDB, Microsoft SQL Server, SQLite, Oracle Database, Amazon Relational
 #### NOSQL
 MongoDB, MarkLogic, InterSystems Caché, OrientDB, Apache CouchDB, IBM Cloudant & Informix, CrateDB, Azure Cosmos DB, BaseX, CouchbaSE sERVER, ExIST db. 
 #### 8. Om flera företag, organisationer eller personer använder samma databas, varför är det då viktigt att sätta upp separata användare i databasen för dessa parter? 
+Om flera användare använder samma databas bör man se till att ingen som inte ska ha behörighet kan läsa, skriva, uppdatera eller ta bort en tabell/collection eller databas. Viktigt att tänka på är även dbRef eller REFERENCES och vilken övrig funktionalitet som erbjuds när man ansluter till databasen se fråga 5 mongo admin help.
 
 #### 9. Vilka delar i CRUD påverkar / gör ändringar i databasen, och vilka delar i CRUD gör inte det?
 READ gör inte ändringar således allt som är relaterat till read.  

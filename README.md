@@ -4,9 +4,6 @@
 [Mariadb](https://mariadb.com/)
 [Mongodb](https://www.mongodb.com)
 [MySQL](https://www.mysql.com) 
-
-
-
 ---
 
 
@@ -30,7 +27,8 @@ mysql show variables ger kanske mer svar:
 #### Så efter att ha undersökt mitt system ligger loggarna i /var/log/mysql/
 
 #### MongoDB
-Från mongo show logs \
+Från mongo: \
+show logs \
 show log global \
 show log startupWarnings. \
 Mongo har också en konfigurationsfil etc/"mongo.conf där normalt var/log/mongodb/mongodb.log står.
